@@ -1,17 +1,19 @@
-import React from 'react';
-import VideoItem from './video_item.component';
-
-
+import React  from 'react';
+import VideoListItem from './video_item.component';
 const VideoList = (props)=>{
-	const personList = props.persons.map((person,key)=>{
-		return <VideoItem onVideoSelect={props.onVideoSelect} 
-											key={key}
-											person={person}/>;
-	})
-	console.log(props.persons.length);
-	return (<ul className='col-md-4 list-group'>
-		{personList}
-	</ul>);
+
+		const videoItems = props.videos.map((video,key)=>{
+				return <VideoListItem 
+							 onVideoSelect={props.onVideoSelect}	
+							 key={key} 
+							 video={video}/>
+		});
+
+		return (
+				<ul className='col-md-4 list-group'>
+					{videoItems}
+				</ul>
+		)
 }
 
-export default VideoList;
+export default VideoList	

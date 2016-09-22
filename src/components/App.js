@@ -1,3 +1,13 @@
-import ReactDOM from 'react-dom';
+import React,{Component} from 'react';
 
-// ReactDOM()
+class App extends Component{
+
+	
+	render(){
+			return (
+				<h1>Simple Start with Redux</h1>
+			)
+	}
+}
+
+export default App

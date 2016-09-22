@@ -1,11 +1,13 @@
 import React,{Component} from 'react';
-
+import ProductList from '../containers/product_list_container'
 class App extends Component{
 
 	
 	render(){
 			return (
-				<h1>Simple Start with Redux</h1>
+				<div>
+					<ProductList/>
+				</div>
 			)
 	}
 }

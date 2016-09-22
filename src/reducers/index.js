@@ -1,5 +1,5 @@
-import {combineReducers} from 'react-readux'
-import {ProductReducers} from './reducers.products';
+import {combineReducers} from 'redux'
+import ProductReducers from './reducers.products';
 
 const mainReducers = combineReducers({
 	products:ProductReducers

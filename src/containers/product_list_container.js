@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-
+import {connect} from 'react-redux'
 
 class ProductListContainer extends Component {
 
@@ -19,6 +19,10 @@ class ProductListContainer extends Component {
 			)
 	}
 }
-
-export default ProductListContainer
+function mapStateToProps(state){
+	return {
+		products:state.products
+	}
+}
+export default connect(mapStateToProps)(ProductListContainer)
 

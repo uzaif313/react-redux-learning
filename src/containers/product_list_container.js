@@ -20,9 +20,11 @@ class ProductListContainer extends Component {
 
 	render(){
 			return(
-				<ul className="list-group col-sm-4">
-					{this.renderProductList()}
-				</ul>
+				<div className="card">
+					<ul className="list-group list-group-flush col-sm-3">
+						{this.renderProductList()}
+					</ul>
+				</div>
 			)
 	}
 }

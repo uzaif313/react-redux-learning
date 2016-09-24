@@ -1,3 +1,6 @@
 export function selectProduct(product){
-	console.log("Broom:",product);
+	return {
+		type:"PRODUCT_SELECTED",
+		payload:product
+	}
 }

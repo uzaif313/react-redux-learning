@@ -1,14 +1,11 @@
 import React,{Component} from 'react';
-import ProductList from '../containers/product_list_container'
-import ProductDetail from '../containers/product_detail_container'
+import SearchBar from '../containers/search_bar.container'
 class App extends Component{
 
 	render(){
 			return (
 				<div>
-				
-					<ProductList/>
-					<ProductDetail/>
+					<SearchBar/>
 				</div>
 			)
 	}

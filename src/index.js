@@ -1,10 +1,8 @@
-import React,{Component} from 'react';
+import React,{ Component } from 'react';
 import ReactDOM from 'react-dom';
-import _ from 'lodash';
+import { Provider } from 'react-redux';
+import { createStore, applyMiddleware } from 'redux';
+import ReduxPromise from 'redux-promise';
 import App from './components/App';
-import reducers from './reducers';
-import {Provider} from 'react-redux';
-import {createStore} from 'redux';
-// const API_KEY = 'AIzaSyDFCcJF3OtbveetGsLPaUZI6IWIhf7w35k';
-const store = createStore(reducers);
-ReactDOM.render(<Provider store={store}><App/></Provider>,document.querySelector(".container"));
+const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
+ReactDOM.render(<App/>,document.querySelector(".container"));

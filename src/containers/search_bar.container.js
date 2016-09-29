@@ -24,7 +24,7 @@ class SearchBar extends React.Component {
         return (<div>
         					<form  onSubmit={this.onFormSubmit} className="input-group">
         						<input
-        						placeholder="Enter Company Stock Market Code"
+        						placeholder="Enter City name for 5 days weather forcasting"
         						className="form-control"
         						onChange={this.onInputChange}/>
         						<span className="input-group-btn"><button className="btn btn-secondary">Search</button></span>
